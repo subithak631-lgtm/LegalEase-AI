@@ -1,0 +1,6 @@
+from PIL import Image, ImageDraw, ImageFont
+
+img = Image.new('RGB', (300, 100), color=(15, 23, 42))
+d = ImageDraw.Draw(img)
+d.text((30, 35), "LegalEase", fill=(59, 130, 246))
+img.save("images/logo.png")
